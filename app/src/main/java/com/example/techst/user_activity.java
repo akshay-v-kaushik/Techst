@@ -286,7 +286,7 @@ public class user_activity extends AppCompatActivity implements View.OnClickList
     private void delete_dialog(){
         new AlertDialog.Builder(user_activity.this)
                 .setTitle("Delete")
-                .setMessage(Html.fromHtml("<font color='#B52400'>Are you sure you want to sign out?</font>"))
+                .setMessage(Html.fromHtml("<font color='#B52400'>Are you sure you want to delete?</font>"))
                 .setPositiveButton(Html.fromHtml("<font color='#B52400'>Yes</font>"), (dialog, which) -> user_deleteaccount())
                 .setNegativeButton(Html.fromHtml("<font color='#B52400'>No</font>"), null)
                 .setIcon(android.R.drawable.ic_dialog_alert)
