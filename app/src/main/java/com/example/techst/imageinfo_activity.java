@@ -20,6 +20,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -240,18 +241,18 @@ public class imageinfo_activity extends AppCompatActivity {
     private void signout_dialog(){
         new AlertDialog.Builder(imageinfo_activity.this)
                 .setTitle("Sign Out")
-                .setMessage("Are you sure you want to sign out?")
-                .setPositiveButton(android.R.string.yes, (dialog, which) -> user_signout())
-                .setNegativeButton(android.R.string.no, null)
+                .setMessage(Html.fromHtml("<font color='#B52400'>Are you sure you want to sign out?</font>"))
+                .setPositiveButton(Html.fromHtml("<font color='#B52400'>Yes</font>"), (dialog, which) -> user_signout())
+                .setNegativeButton(Html.fromHtml("<font color='#B52400'>No</font>"), null)
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
     private void delete_dialog(){
         new AlertDialog.Builder(imageinfo_activity.this)
                 .setTitle("Delete")
-                .setMessage("Are you sure you want to delete?")
-                .setPositiveButton(android.R.string.yes, (dialog, which) -> user_deleteaccount())
-                .setNegativeButton(android.R.string.no, null)
+                .setMessage(Html.fromHtml("<font color='#B52400'>Are you sure you want to sign out?</font>"))
+                .setPositiveButton(Html.fromHtml("<font color='#B52400'>Yes</font>"), (dialog, which) -> user_deleteaccount())
+                .setNegativeButton(Html.fromHtml("<font color='#B52400'>No</font>"), null)
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
