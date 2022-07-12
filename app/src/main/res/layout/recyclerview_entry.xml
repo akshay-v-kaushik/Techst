@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:layout_margin="20dp"
+                android:id="@+id/recyclerview_image"
+                android:src="@drawable/onepiece"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="20dp"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:id="@+id/recyclerview_imagename"
+                    android:text="NAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:layout_below="@id/recyclerview_image"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/recyclerview_scannedtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:hint="Scan to text"
+                    android:textSize="15dp"
+                    android:layout_marginHorizontal="20dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

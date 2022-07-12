@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D6D6D6">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="150">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:text="UPLOAD FROM"
+            android:textAllCaps="true"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="2"/>
+
+        <Button
+            android:id="@+id/dialog_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_weight="50"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/rounded_dialog"
+            android:text="CAMERA">
+        </Button>
+
+        <Button
+            android:id="@+id/dialog_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_weight="50"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/rounded_dialog"
+            android:text="GALLERY">
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

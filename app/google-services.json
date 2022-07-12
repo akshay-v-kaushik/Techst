@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "498883575297",
+    "project_id": "techst-bf50c",
+    "storage_bucket": "techst-bf50c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498883575297:android:4db8a6ff541fc04af58a00",
+        "android_client_info": {
+          "package_name": "com.example.techst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498883575297-dlgincrn51grfcf6mmfba6f1prv52p70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.techst",
+            "certificate_hash": "10298121bb61178e6ac8e61f4735560779a2b55b"
+          }
+        },
+        {
+          "client_id": "498883575297-5dlsa5gmsusf4dkqdd0dj5vvqg4d8upf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMS5L75Mj5Hjecr6tIfN9le30Ovw7YNDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498883575297-5dlsa5gmsusf4dkqdd0dj5vvqg4d8upf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
