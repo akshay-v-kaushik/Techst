@@ -276,7 +276,7 @@ public class user_activity extends AppCompatActivity implements View.OnClickList
 
     private void signout_dialog(){
         new AlertDialog.Builder(user_activity.this)
-                .setTitle("Sign Out")
+                .setTitle(Html.fromHtml("<font color='#B52400'>Sign Out</font>"))
                 .setMessage(Html.fromHtml("<font color='#B52400'>Are you sure you want to sign out?</font>"))
                 .setPositiveButton(Html.fromHtml("<font color='#B52400'>Yes</font>"), (dialog, which) -> user_signout())
                 .setNegativeButton(Html.fromHtml("<font color='#B52400'>No</font>"), null)
@@ -285,7 +285,7 @@ public class user_activity extends AppCompatActivity implements View.OnClickList
     }
     private void delete_dialog(){
         new AlertDialog.Builder(user_activity.this)
-                .setTitle("Delete")
+                .setTitle(Html.fromHtml("<font color='#B52400'>Delete</font>"))
                 .setMessage(Html.fromHtml("<font color='#B52400'>Are you sure you want to delete?</font>"))
                 .setPositiveButton(Html.fromHtml("<font color='#B52400'>Yes</font>"), (dialog, which) -> user_deleteaccount())
                 .setNegativeButton(Html.fromHtml("<font color='#B52400'>No</font>"), null)
