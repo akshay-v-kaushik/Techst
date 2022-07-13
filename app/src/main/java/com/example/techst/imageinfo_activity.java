@@ -98,7 +98,8 @@ public class imageinfo_activity extends AppCompatActivity {
 
         String ImageKey = getIntent().getStringExtra("ImageKey");
         Dataref = ref.child(ImageKey);
-        StorageRef = FirebaseStorage.getInstance().getReference().child("Images").child(ImageKey+".jpg");
+        String username = user.getDisplayName();
+        StorageRef = FirebaseStorage.getInstance().getReference().child(username).child("Folder 1").child(ImageKey+".jpg");
 
 
         ref.child(ImageKey).addValueEventListener(new ValueEventListener() {
@@ -136,6 +137,7 @@ public class imageinfo_activity extends AppCompatActivity {
                         Dataref.removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
+                                Toast.makeText(imageinfo_activity.this, "Successfully deleted", Toast.LENGTH_LONG).show();
                                 startActivity(new Intent(imageinfo_activity.this, user_activity.class));
 
                             }
